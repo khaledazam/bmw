@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="image/logo.svg" alt="logo">
+            <div class="nav-links">
+                <a href="#">models</a>
+                <a href="#">accessoires</a>
+                <a href="#">services</a>
+                <a href="#">discover</a>
+                <div class="search">
+                    <input type="text" placeholder="find your">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="text">
+                <span>the bmw x6:all hilight</span>
+                <h1>the x6 m50i</h1>
+                <a href="#" class="btn">configuration and pricing</a>
+            </div>
+            <div class="big-img">
+                <img id="img" src="image/car1.png" alt="car num 1">
+            </div>
+        </div>
+        <div class="small-car">
+            <img onclick="mycars(this.src)" src="image/car1.png">
+            <img onclick="mycars(this.src)" src="image/car2.png">
+            <img onclick="mycars(this.src)" src="image/car3.png">
+            <img onclick="mycars(this.src)" src="image/car4.png">
+        </div>
+    </div>
+    <script>
+        let bigimage=document.getElementById('img')
+        function mycars(car){
+            bigimage.src=car
+        }
+    </script>
+</body>
+</html>
